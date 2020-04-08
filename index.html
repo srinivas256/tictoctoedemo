@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VBS: TiC Toc ToE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body{
+  background:#8b10e8;
+  color:white;
+  }
+  td{
+height:100px;
+  }
+  
+  .win_image{
+    position: absolute;
+    font-weight: bold;
+    font-family: arial;
+    text-align: center;
+	animation:blinkingText 1.2s infinite;
+    }
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+  /* Media Query for Mobile Devices */ 
+        @media (max-width: 480px) { 
+            .win_image { 
+               top:41%;
+	           left:20%;
+               font-size: 40px;
+            } 
+        } 
+          
+        /* Media Query for low resolution  Tablets, Ipads */ 
+        @media (min-width: 481px) and (max-width: 767px) { 
+            .win_image { 
+ 
+               top:35%;
+	           left:26%;
+               font-size: 40px;
+            } 
+        } 
+          
+        /* Media Query for Tablets Ipads portrait mode */ 
+        @media (min-width: 768px) and (max-width: 1024px){ 
+             .win_image { 
+               top:33%;
+	           left:20%;
+               font-size: 60px;
+            } 
+        } 
+          
+        /* Media Query for Laptops and Desktops */ 
+        @media (min-width: 1025px) and (max-width: 1280px){ 
+             .win_image { 
+                 top:33%;
+	           left:38%;
+               font-size: 50px;
+            }  
+        } 
+          
+        /* Media Query for Large screens */ 
+        @media (min-width: 1281px) { 
+             .win_image { 
+               top:33%;
+	           left:38%;
+               font-size: 50px;
+            }  
+        } 
+
+  </style>
+  <script src="jquery.js"></script>
+<script src="logic.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>VBS - TiC ToC ToE</h2>
+  <p>Lets play the game :)</p>            
+  <table class="table table-bordered">
+  
+    <tbody>
+     
+  <tr>
+    <td class="one"></td>
+    <td class="two"></td>
+    <td class="three"></td>
+  </tr>
+  <tr>
+    <td class="four"></td>
+    <td class="five"></td>
+    <td class="six"></td>
+  </tr>
+  <tr>
+    <td class="seven"></td>
+    <td id="onenine"></td>
+    <td class="nine"></td>
+  </tr>
+    </tbody>
+  </table>
+  
+<h1 class="win_image">Player 1 Won </h1>
+<audio id="audio" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+<audio id="audio2" src="won.mp3"></audio>
+</div>
+
+</body>
+</html>
